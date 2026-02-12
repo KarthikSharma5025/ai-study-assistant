@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Study Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 AI Study Assistant</h1>
+    <p class="subtitle">Ask anything related to your studies</p>
+
+    <div id="chat-box"></div>
+
+    <div class="input-area">
+        <textarea id="user-input" placeholder="Ask your question..."></textarea>
+        <button onclick="sendMessage()">Ask</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
